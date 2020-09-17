@@ -35,12 +35,6 @@ def inside(head):
     return -200 < head.x < 190 and -200 < head.y < 190
 
 '''
-Genera el movimiento dentro del juego, tanto de la serpiente como de la comida
-Entrada: Ninguna
-Salida: Ninguna
-'''
-
-'''
 Se genera un valor de decision que se asigna color ya sea de la serpiente o la comida, y se asegura que no sean iguales entre ellos
 '''
 colores =['yellow','violet','blue','purple','orange']
@@ -51,6 +45,11 @@ rand_colores_comida = [random.choice(colores)]
 while rand_colores_comida == rand_colores:
     rand_colores_comida = [random.choice(colores)]
 
+'''
+Genera el movimiento dentro del juego, tanto de la serpiente como de la comida
+Entrada: Ninguna
+Salida: Ninguna
+'''
 def move():
     head = snake[-1].copy()
     head.move(aim)
