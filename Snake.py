@@ -26,8 +26,12 @@ def inside(head):
     "Return True if head inside boundaries."
     return -200 < head.x < 190 and -200 < head.y < 190
 
+'''
+Genera el movimiento dentro del juego, tanto de la serpiente como de la comida
+Entrada: Ninguna
+Salida: Ninguna
+'''
 def move():
-    "Move snake forward one segment."
     head = snake[-1].copy()
     head.move(aim)
 
